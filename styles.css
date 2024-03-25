@@ -1,0 +1,38 @@
+body {
+  background-color: black;
+  color: red;
+  font-family: "Times New Roman";
+}
+
+#img1 {
+  display: block;
+  height: 200px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#buscar {
+  text-align: center;
+  height: 85px;
+  width: 600px; 
+  margin-left: 150px;
+  font-size: 80px;
+}
+#buscar::placeholder {
+  font-size: 55px
+}
+#boton {
+  font-size: 80px;
+  
+}
+
+#pokedex {
+
+   font-size: 80px;
+   text-align: center;
+   
+}
+
+#pokedex img {
+  width: 800px !important; 
+  height: 700px !important; 

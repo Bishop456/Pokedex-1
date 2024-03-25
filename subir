@@ -1,0 +1,24 @@
+#!/bin/bash
+
+
+usuario="Bishop456"
+token=$(cat $HOME/token)
+
+read -p "Ingrese la dirección del repositorio remoto: " direccion
+
+repo=$(echo $direccion | awk -F '456/' '{print $2}')
+
+rm -rf .git
+
+git init
+
+git add .
+
+git commit -m "Commit inicial"
+
+
+git remote add origin $direccion 
+
+git push -u https://$usuario:$token@github.com/$usuario/$repo.git master
+ 
+
